@@ -3,86 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial Chevere</title>
-    <meta name="keywords" content="proyecto, prueba, html, css, javascript">
-    <style></style>
+    <meta name="descripcion" content="CamaronSano es una empresa dedicada al analizis de larvas de camarón utilizando 
+    inteligencia artificial para mejorar la salud y productividad de los cultivos acuícolas.">
+    <title>CamaronSano</title>
+
 </head>
 <body>
-    <header>
-        <h1>Este es el titulo</h1>
-        <nav>
+    <!-- contenido de la landing-->
+    <header> 
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="#"></a>Inicio</li>
-                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucion">Nuestra solucion</a></li>
+                <li><a href="#metricas">Metricas</a></li>
+                <li><a href="#glosario">Glosario</a></li>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#equipo">Nuestro Equipo</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Titulo de seccion 1</h2>
-            <p>Seccion 1</p>
-            <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="Imagen">
-            <article>
-                <p>Articulo 1 de la seccion 1</p>
-            </article>
-            <article>
-                <p><link rel="stylesheet" href="www.wikipedia.com">Articulo 2</p>
-            </article>
-        </section>
-        <div>Contenedor 1</div>
-        <section>
-            <table>
-                <thead>
-                    <p>Elemento tabla 1 arriba</p>
-                </thead>
-                <tbody>
-                    <p>Elemento tabla 1 medio</p>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                    </tr>
-                    <form action="#">
-                        <h3>Formulario de ingreso de nombre</h3>
-                        <input type="text" name="in_name" id="">
-                        <button><a href="#"></a>Confirmar</button>
-                    </form>
-                    <form action="#">
-                        <h4>Selector de genero</h4>
-                        <select name="generos" id="">
-                            <option value="fem">Mujer</option>
-                            <option value="male">Hombre</option>
-                        </select>
-                    </form>
-                </tbody>
-                <tfoot>
-                    <p>Elemento tabla 1 abajo</p>
-                </tfoot>
-            </table>
+        <section id="hero">
+            <h1>CamaronSano cuida tus larvas!</h1>
+            <p><strong>Gracias a nuestra tecnología y <a href="#equipo">nuestro equipo</a> ahora podemos analizar el camaron y proteger tus larvas mediante <em>software potenciado por IA</em> y sensores precisos.</strong></p>
+            <picture>
+                <source media="(min-width: 768px)" srcset="https://picsum.photos/1600/600">
+                <source media="(max-width: 767px)" srcset="https://thumbs.dreamstime.com/b/camar%C3%B3n-de-la-historieta-69115140.jpg" type="image/webp">
+                <img src="ht" alt="Imagen de un camarón sano" width="600" height="400">
+            </picture>
         </section>
         
-        
+        <section id="problema">
+            <h2>El problema</h2>
+            <p>Los cultivos de camarón enfrentan desafíos significativos debido a condiciones ambientales <mark>adversas</mark> y falta de <mark>monitoreo</mark> efectivo.</p>
+            <p>Estas dificultades pueden resultar en pérdidas económicas considerables para los agricultores acuícolas.</p>
+            <blockquote>
+                <p>“El manejo y control de la salud de las larvas aquicolas ha resultado muy costosa durante muchos años”</p>
+                <cite>Emilio Zambrano,experto en acuicultura</cite>
+                <ul>
+                    <li>Causas comunes</li>
+                    <li>Falta de monitoreo constante</li>
+                    <li>Condiciones ambientales adversas</li>
+                    <li>Enfermedades y parásitos</li>
+                </ul>
+            </blockquote>
+        </section>
 
+        <section id="solucion">
+            <h2>Nosotros te ayudamos</h2>
+            <p>Con nuestra solución innovadora, podemos detectar problemas en las larvas de camarón antes de que se conviertan en una amenaza para tus preciosas larvas, gracias a que monitoreamos <mark>24/7</mark> la salud de tus larvas.</p>
+            <article>
+                <h3>Ayuda a tu bolsillo</h3>
+                <p>Te ayudamos a reducir costos operativos y reducir  la perdidas de larvas por falta de monitoreo.</p>
+            </article>
+            <article>
+                <h3>24/7 operativo!</h3>
+                <p>Nosotros te damos una garantia de que el sistema estará disponible las 24 horas del día, los 7 días de la semana.</p>
+            </article>
+            <article>
+                <h3>Procesos eficientes, rapidos y sobre todo confiables.</h3>
+                <p>Utilizamos tecnología de vanguardia potenciada con IA para garantizar resultados precisos y consistentes en el monitoreo de la salud de tus larvas.</p>
+            </article>
+            <video controls muted width="600" height="400" title="Camaroles bailando video">
+                <source src="Camaronesbailando.mp4" type="video/mp4">
+                Tu navegador no soporta el video de unos camaros bailando.
+            </video>
+        </section>
+        
+        <section id="metricas">
+            <h2>Metricas</h2>
+            <dl>
+                <dt>Reducción de pérdidas</dt>
+                <dd>Hasta un <data value="30">30%</data> de reducción en pérdidas de larvas.</dd>
+                <dt>Aumento de productividad</dt>
+                <dd>Mejora del <data value="20">20%</data> en la productividad de los cultivos.</dd>
+                <dt>Monitoreo constante</dt>
+                <dd>Monitoreo <data value="608400">24/7</data> para una detección temprana de problemas.</dd>
+                <dt>etapa Postlarva Saludable</dt>
+                <dd>permite tener procesos postlarva hasta un <data value="25">25%</data> mas saludable.</dd>
+            </dl>
+            <p>Precisión del diagnóstico:
+            <meter min="0" max="100" low="70" high="90" optimum="98" value="98">
+            98% de precisión
+            </meter>
+            </p>
+            <p>avance para el lanzamiento del producto:
+                <progress value="0.95" max="1">95% de tolerancia a fallo</progress>
+            </p>
+            
+        </section>
+
+        <section id="glosario">
+            <h2>Glosario</h2>
+            <dl>
+                <dt><dfn>Larvas</dfn></dt>
+                <dd>Etapa temprana del desarrollo de los camarones, importante para su crecimiento y supervivencia.</dd>
+                <dt><dfn>Acuicultura</dfn></dt>
+                <dd>Profesion o practica de criar seres acuaticos bajo condiciones controladas o superficiales.</dd>
+                <dt><dfn>PostLarva</dfn></dt>
+                <dd>Se refiere al proceso de cría de larvas en un entorno controlado donde mantiene un <abbr title="Libres de patógenos específicos">SPF</abbr> </dd>
+            </dl>
+        </section>
+
+        <section id="faq">
+            <h2>FAQs (preguntas Frecuentes)</h2>
+            <details>
+                <summary>¿Cómo garantiza la IA la precisión en la detección de virus??</summary>
+                <p>Nuestro modelo ha sido entrenado con más de 50,000 imágenes de larvas, logrando una precisión superior al 98% en condiciones variables de iluminación.</p>
+            </details>
+            <details>
+                <summary> ¿Los datos de mi camaronera están protegidos? </summary>
+                <p>Sí, utilizamos cifrado de extremo a extremo y cumplimos con estándares internacionales de privacidad para asegurar que su información biométrica sea confidencial.</p>
+            </details>
+            <details>
+                <summary>¿Es compatible con diferentes tipos de cultivos acuícolas?</summary>
+                <p>Nuestra solución es adaptable y puede ser implementada en una variedad de entornos acuícolas, incluyendo estanques, tanques y sistemas de recirculación.</p>
+            </details>
+        </section>
+
+        <section id="equipo">
+            <h2>Nuestro maravillo equipo</h2>
+            <figure>
+                <img src="https://picsum.photos/1600/600" alt="Miembro del equipo1 Kevin" width="300" height="200">
+                <figcaption>Kevin Alonso - Driver</figcaption>
+                <p>kevinalonso@hotmail.com</p>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/1600/600" alt="Miembro del equipo2 Mateo" width="300" height="200">
+                <figcaption>Mateo Gonzalez - Navigator</figcaption>
+                <p>mateogonzales@hotmail.com</p>
+            </figure>
+            <figure>
+                <img src="camaronbest.jpeg" alt="Miembro del equipo3 Jhon Camaron" width="300" height="200">
+                <figcaption>Jhon Camaron - Researcher</figcaption>
+                <p>camaronmonster68@hotmail.com</p>
+            </figure>
+
+        </section>
     </main>
-    <aside>
-        <p>Fin</p>
-    </aside>
     <footer>
-
+        <address>
+            <p>CamaronSano S.A.</p>
+            <p>Calle del Camarón, Ciudad Manta, Ecuador</p>
+            <p>Email: camaronsano@corporation.ec
+        </address>
+        <time datetime="2026"></time>
+        <small>&copy; 2026 CamaronSano. Todos los derechos reservados.</small>
     </footer>
-
+        
 </body>
-<script>
-
-</script>
 </html>
