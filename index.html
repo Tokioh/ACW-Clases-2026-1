@@ -3,154 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="CamaronSano es una empresa dedicada al analizis de larvas de camarón utilizando 
-    inteligencia artificial para mejorar la salud y productividad de los cultivos acuícolas.">
-    <title>CamaronSano</title>
-
+    <title>Portafolio - Mateo Gonzales y Kevin Alonso</title>
 </head>
 <body>
-    <!-- contenido de la landing-->
-    <header> 
-        <nav aria-label="Navegación principal">
+    <header>
+        <h1>Portafolio de Desarrollo de Software</h1>
+        <p>Mateo Gonzalez & Kevin Alonso</p>
+        <nav>
             <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#problema">Problema</a></li>
-                <li><a href="#solucion">Nuestra solucion</a></li>
-                <li><a href="#metricas">Metricas</a></li>
-                <li><a href="#glosario">Glosario</a></li>
-                <li><a href="#faq">Preguntas frecuentes</a></li>
-                <li><a href="#equipo">Nuestro Equipo</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#habilidades">Nuestras habilidades</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <h1>CamaronSano cuida tus larvas!</h1>
-            <p><strong>Gracias a nuestra tecnología y <a href="#equipo">nuestro equipo</a> ahora podemos analizar el camaron y proteger tus larvas mediante <em>software potenciado por IA</em> y sensores precisos.</strong></p>
-            <picture>
-                <source media="(min-width: 768px)" srcset="https://picsum.photos/1600/600">
-                <source media="(max-width: 767px)" srcset="https://thumbs.dreamstime.com/b/camar%C3%B3n-de-la-historieta-69115140.jpg" type="image/webp">
-                <img src="ht" alt="Imagen de un camarón sano" width="600" height="400">
-            </picture>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post" aria-label="Formulario de contacto">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="ejem. Kevin Gonzalez">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="micorreo@email.com">
+                    </p>
+                    <p>
+                        <label for="numero">Teléfono:</label>
+                        <input type="tel" name="numero" id="numero" pattern="[0-9]{10}" title="Ingresa 10 dígitos sin espacios"
+                        placeholder="0962562482">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Envianos tu mensaje</legend>
+                    <p>
+                        <label for="asunto">Asunto:</label>
+                        <select name="asunto" id="asunto" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="Cotizacion">Idea para cotizar</option>
+                            <option value="trabajo">Oferta de trabajo</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                    <p> 
+                        <label for="mensaje">Mensaje:</label> 
+                        <textarea id="mensaje" name="mensaje" 
+                        rows="5" cols="40" 
+                        required minlength="30" 
+                        placeholder="Cuéntanos en qué podemos ayudarte..."></textarea> 
+                    </p> 
+                </fieldset>
+                <p>
+                    <input type="checkbox" name="derecho" id="derecho" required>
+                    <label for="derecho">Acepto que mis datos sean almacenados y tratados.</label>
+                </p>
+                <p>
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Limpiar</button>
+                <p>
+            </form>  
         </section>
         
-        <section id="problema">
-            <h2>El problema</h2>
-            <p>Los cultivos de camarón enfrentan desafíos significativos debido a condiciones ambientales <mark>adversas</mark> y falta de <mark>monitoreo</mark> efectivo.</p>
-            <p>Estas dificultades pueden resultar en pérdidas económicas considerables para los agricultores acuícolas.</p>
-            <blockquote>
-                <p>“El manejo y control de la salud de las larvas aquicolas ha resultado muy costosa durante muchos años”</p>
-                <cite>Emilio Zambrano,experto en acuicultura</cite>
-                <ul>
-                    <li>Causas comunes</li>
-                    <li>Falta de monitoreo constante</li>
-                    <li>Condiciones ambientales adversas</li>
-                    <li>Enfermedades y parásitos</li>
-                </ul>
-            </blockquote>
-        </section>
-
-        <section id="solucion">
-            <h2>Nosotros te ayudamos</h2>
-            <p>Con nuestra solución innovadora, podemos detectar problemas en las larvas de camarón antes de que se conviertan en una amenaza para tus preciosas larvas, gracias a que monitoreamos <mark>24/7</mark> la salud de tus larvas.</p>
-            <article>
-                <h3>Ayuda a tu bolsillo</h3>
-                <p>Te ayudamos a reducir costos operativos y reducir  la perdidas de larvas por falta de monitoreo.</p>
-            </article>
-            <article>
-                <h3>24/7 operativo!</h3>
-                <p>Nosotros te damos una garantia de que el sistema estará disponible las 24 horas del día, los 7 días de la semana.</p>
-            </article>
-            <article>
-                <h3>Procesos eficientes, rapidos y sobre todo confiables.</h3>
-                <p>Utilizamos tecnología de vanguardia potenciada con IA para garantizar resultados precisos y consistentes en el monitoreo de la salud de tus larvas.</p>
-            </article>
-            <video controls muted width="600" height="400" title="Camaroles bailando video">
-                <source src="Camaronesbailando.mp4" type="video/mp4">
-                Tu navegador no soporta el video de unos camaros bailando.
-            </video>
-        </section>
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+                <article>
+                    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Mateo Gonzales">
+                    <h3>Mateo Gonzalez</h3>
+                    <p>Estudiante de Ingeniería de Software, apasionado por la lógica de programación y el diseño de bases de datos.</p>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Kevin Alonso">
+                    <h3>Kevin Alonso</h3>
+                    <p>Estudiante de Ingeniería de Software, enfocado en el desarrollo Frontend y la creación de interfaces accesibles.</p>
+                </article>
+        </section> 
         
-        <section id="metricas">
-            <h2>Metricas</h2>
-            <dl>
-                <dt>Reducción de pérdidas</dt>
-                <dd>Hasta un <data value="30">30%</data> de reducción en pérdidas de larvas.</dd>
-                <dt>Aumento de productividad</dt>
-                <dd>Mejora del <data value="20">20%</data> en la productividad de los cultivos.</dd>
-                <dt>Monitoreo constante</dt>
-                <dd>Monitoreo <data value="608400">24/7</data> para una detección temprana de problemas.</dd>
-                <dt>etapa Postlarva Saludable</dt>
-                <dd>permite tener procesos postlarva hasta un <data value="25">25%</data> mas saludable.</dd>
-            </dl>
-            <p>Precisión del diagnóstico:
-            <meter min="0" max="100" low="70" high="90" optimum="98" value="98">
-            98% de precisión
-            </meter>
-            </p>
-            <p>avance para el lanzamiento del producto:
-                <progress value="0.95" max="1">95% de tolerancia a fallo</progress>
-            </p>
-            
+        <section id="habilidadesmateo">
+            <h2>Habilidades Técnicas Mateo</h2>
+            <table>
+                <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Tecnología / Herramienta</th>
+                        <th scope="col">Dominio de Mateo</th>
+                        <th scope="col">Área de Aplicación</th>
+                        <th scope="col">Años de experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Lenguajes</th>
+                        <td>HTML 5 y CSS</td>
+                        <td>Avanzado</td>
+                        <td>Frontend</td>
+                        <td>2 años</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Avanzado</td>
+                        <td>Scripts Automatización</td>
+                        <td>5 años</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Ultra avanzado</td>
+                        <td>Gestión de inventario</td>
+                        <td>5 años</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Framework</th>
+                        <td>Next.js</td>
+                        <td>Creador</td>
+                        <td>Todo Frontend</td>
+                        <td>Desde la cuna</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Base de datos</th>
+                        <td>PostgresSQL</td>
+                        <td>Medio</td>
+                        <td rowspan="2">Base de datos en proyectos</td>
+                        <td>2 años</td>
+                    </tr>
+                    <tr>
+                        <td>SQlite</td>
+                        <td>Avanzado</td>
+                        <td>3 años</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Ultima actualizacin 2026-04-21 - Mateo Gonzalez</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
-
-        <section id="glosario">
-            <h2>Glosario</h2>
-            <dl>
-                <dt><dfn>Larvas</dfn></dt>
-                <dd>Etapa temprana del desarrollo de los camarones, importante para su crecimiento y supervivencia.</dd>
-                <dt><dfn>Acuicultura</dfn></dt>
-                <dd>Profesion o practica de criar seres acuaticos bajo condiciones controladas o superficiales.</dd>
-                <dt><dfn>PostLarva</dfn></dt>
-                <dd>Se refiere al proceso de cría de larvas en un entorno controlado donde mantiene un <abbr title="Libres de patógenos específicos">SPF</abbr> </dd>
-            </dl>
+        <section id="habilidadeskevin">
+            <h2>Habilidades Técnicas Kevin</h2>
+            <table>
+                <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Tecnología / Herramienta</th>
+                        <th scope="col">Dominio de Kevin</th>
+                        <th scope="col">Área de Aplicación</th>
+                        <th scope="col">Años de experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Lenguajes</th>
+                        <td>HTML5 & CSS3</td>
+                        <td>Avanzado</td>
+                        <td>Desarrollo y maquetación web</td>
+                        <td>2 Años</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>intermedio</td>
+                        <td>desarrolo frontend</td>
+                        <td>1 Año</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>intermedio</td>
+                        <td>desarrollo de Api's</td>
+                        <td>3 Años</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">frameworks</th>
+                        <td>Django</td>
+                        <td>Avanzado</td>
+                        <td>Interactividad web y lógica</td>
+                        <td>1 Año</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Basico</td>
+                        <td>Interactividad web y lógica</td>
+                        <td>1 Año</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="1">Base de datos</th>
+                        <td>PostgresSQL</td>
+                        <td>Intermedio</td>
+                        <td>Administracion de DB</td>
+                        <td>2.5 Años</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="3">Herramientas</th>
+                        <td>Git & GitHub</td>
+                        <td>Intermedio</td>
+                        <td>Control de versiones</td>
+                        <td>3 Años</td>
+                    </tr>
+                    <tr>
+                        <td>Docker and compose</td>
+                        <td>Intermedio</td>
+                        <td>Contenerizacion</td>
+                        <td>3 Años</td>
+                    </tr>
+                    <tr>
+                        <td>openclaw</td>
+                        <td>Intermedio</td>
+                        <td>automatizacion</td>
+                        <td>1 Años</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Ultima actualizacion 2026-04-21 - Kevin Alonso</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
-
-        <section id="faq">
-            <h2>FAQs (preguntas Frecuentes)</h2>
-            <details>
-                <summary>¿Cómo garantiza la IA la precisión en la detección de virus??</summary>
-                <p>Nuestro modelo ha sido entrenado con más de 50,000 imágenes de larvas, logrando una precisión superior al 98% en condiciones variables de iluminación.</p>
-            </details>
-            <details>
-                <summary> ¿Los datos de mi camaronera están protegidos? </summary>
-                <p>Sí, utilizamos cifrado de extremo a extremo y cumplimos con estándares internacionales de privacidad para asegurar que su información biométrica sea confidencial.</p>
-            </details>
-            <details>
-                <summary>¿Es compatible con diferentes tipos de cultivos acuícolas?</summary>
-                <p>Nuestra solución es adaptable y puede ser implementada en una variedad de entornos acuícolas, incluyendo estanques, tanques y sistemas de recirculación.</p>
-            </details>
-        </section>
-
-        <section id="equipo">
-            <h2>Nuestro maravillo equipo</h2>
-            <figure>
-                <img src="https://picsum.photos/1600/600" alt="Miembro del equipo1 Kevin" width="300" height="200">
-                <figcaption>Kevin Alonso - Driver</figcaption>
-                <p>kevinalonso@hotmail.com</p>
-            </figure>
-            <figure>
-                <img src="https://picsum.photos/1600/600" alt="Miembro del equipo2 Mateo" width="300" height="200">
-                <figcaption>Mateo Gonzalez - Navigator</figcaption>
-                <p>mateogonzales@hotmail.com</p>
-            </figure>
-            <figure>
-                <img src="camaronbest.jpeg" alt="Miembro del equipo3 Jhon Camaron" width="300" height="200">
-                <figcaption>Jhon Camaron - Researcher</figcaption>
-                <p>camaronmonster68@hotmail.com</p>
-            </figure>
-
+        <section id="imagen">
+            <img src="team.png" alt="Equipo de desarrollo de software"
+            width="250"
+            height="200">
+            <img src="yardi.png" alt="Bot de respuesta automatica de confianza"
+            width="200"
+            height="200">
+            <img src="https://picsum.photos/536/354" alt="imagen decorativa"
+            width="250"
+            height="200">
         </section>
     </main>
     <footer>
-        <address>
-            <p>CamaronSano S.A.</p>
-            <p>Calle del Camarón, Ciudad Manta, Ecuador</p>
-            <p>Email: camaronsano@corporation.ec
-        </address>
-        <time datetime="2026"></time>
-        <small>&copy; 2026 CamaronSano. Todos los derechos reservados.</small>
+        <p>&copy; 2026 Mateo Gonzalez & Kevin Alonso. Todos los derechos reservados.</p>
     </footer>
-        
 </body>
 </html>
