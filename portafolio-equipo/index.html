@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Mateo Gonzales y Kevin Alonso</title>
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Desarrollo de Software</h1>
+        <p>Mateo Gonzalez & Kevin Alonso</p>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contactanos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#habilidades">Nuestras habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post" aria-label="Formulario de contacto">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="ejem. Kevin Gonzalez">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="micorreo@email.com">
+                    </p>
+                    <p>
+                        <label for="numero">Teléfono:</label>
+                        <input type="tel" name="numero" id="numero" pattern="[0-9]{10}" title="Ingresa 10 dígitos sin espacios"
+                        placeholder="0962562482">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Envianos tu mensaje</legend>
+                    <p>
+                        <label for="asunto">Asunto:</label>
+                        <select name="asunto" id="asunto" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="Cotizacion">Idea para cotizar</option>
+                            <option value="trabajo">Oferta de trabajo</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                    <p> 
+                        <label for="mensaje">Mensaje:</label> 
+                        <textarea id="mensaje" name="mensaje" 
+                        rows="5" cols="40" 
+                        required minlength="30" 
+                        placeholder="Cuéntanos en qué podemos ayudarte..."></textarea> 
+                    </p> 
+                </fieldset>
+                <p>
+                    <input type="checkbox" name="derecho" id="derecho" required>
+                    <label for="derecho">Acepto que mis datos sean almacenados y tratados.</label>
+                </p>
+                <p>
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Limpiar</button>
+                <p>
+            </form>  
+        </section>
+        
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+                <article>
+                    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Mateo Gonzales">
+                    <h3>Mateo Gonzalez</h3>
+                    <p>Estudiante de Ingeniería de Software, apasionado por la lógica de programación y el diseño de bases de datos.</p>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Kevin Alonso">
+                    <h3>Kevin Alonso</h3>
+                    <p>Estudiante de Ingeniería de Software, enfocado en el desarrollo Frontend y la creación de interfaces accesibles.</p>
+                </article>
+        </section> 
+        
+        <section id="habilidades">
+            <h2>habilidades Tecnicas</h2>
+            <table>
+                <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tecnología / Herramienta</th>
+                        <th scope="col">Dominio de Mateo</th>
+                        <th scope="col">Dominio de Kevin</th>
+                        <th scope="col">Área de Aplicación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">HTML5 & CSS3</th>
+                        <td>Avanzado</td>
+                        <td>Avanzado</td>
+                        <td>Desarrollo y maquetación web</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JavaScript</th>
+                        <td>Intermedio</td>
+                        <td>Avanzado</td>
+                        <td>Interactividad web y lógica</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Git & GitHub</th>
+                        <td>Avanzado</td>
+                        <td>Intermedio</td>
+                        <td>Control de versiones</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
