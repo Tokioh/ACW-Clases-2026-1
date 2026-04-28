@@ -1,0 +1,367 @@
+/* ============ RESET UNIVERSAL ============ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@import "compass/css3";
+
+/* Variables globales con root*/
+:root {
+    --primary-color: rgb(57, 107, 200);
+    --secondary-color: #fff;
+    --font-family: Arial, sans-serif;
+    --line-height: 1.6;
+    --heading-font-family: 'Georgia', sans-serif;
+    --heading-color: #ffffff;
+}
+
+
+
+
+/* header */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.nav_logo img {
+    width: 75px;
+    height: 50px;
+}
+
+/* nav bar */
+.div_navbar {
+    display: flex;
+    background-color: rgb(57, 107, 200);
+    color: #fff;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+
+/* nav list a */
+.nav_list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+
+/* seudoclases*/
+.nav_list a:hover {
+    background-color: rgb(57, 107, 200);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+
+.div-nosotros img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* background body*/
+body {
+    background-image: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    backdrop-filter: blur(10px)
+    
+}
+
+/* Cada label en su propia línea */ 
+label { 
+  display: block;
+  margin-bottom: 4px; 
+  font-weight: 500; 
+  font-size: 0.95rem; 
+}
+
+/* Estilos para inputs, selects y textareas */
+input, select, textarea { 
+  width: 100%; 
+  padding: 10px 12px; 
+  font-size: 1rem; 
+  font-family: var(--font-body);    /* Misma fuente que el resto */ 
+  border: 1px solid #e0e0e0; 
+  border-radius: var(--radius); 
+  margin-bottom: var(--spacing-md); /* Espacio entre campos */ 
+  transition: border-color 0.2s; 
+}
+
+/* accesibilidad FOCUS */
+input:focus, 
+select:focus, 
+textarea:focus { 
+  outline: 2px solid var(--color-secondary); 
+  outline-offset: 2px; 
+  border-color: var(--color-secondary); 
+} 
+
+
+/* flexbox */
+
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Georgia', sans-serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+h2, h3 {
+    font-family: 'Georgia', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+
+
+/* buttons */
+
+button {
+    background-color: rgb(57, 107, 200);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(24, 69, 155);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+
+/* Formulario de contacto*/
+
+.formulariocontacto {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.forms-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* fieldset y legend */
+
+fieldset {
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    border-radius: 4px;
+
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: #ffffff;
+}
+
+/* nosotros */
+
+.nosotros {
+    text-align: center;
+    position: relative;
+    min-height: 700px;
+}
+
+.nosotros::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+}
+
+.nosotros > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.div-nosotros {
+    
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-kevin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.img-mateo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-right: 100px;
+}
+
+/* Tabla habilidades*/
+
+.habilidades {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: nowrap
+}
+
+
+/* tablas */
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+    color: #fff;
+}
+
+table tr {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: .35em;
+    color: #000000;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+tr:hover {
+    background-color: #c8c5c5;
+}
+
+td:hover {
+    background-color: rgba(94, 94, 94, 0.666);
+}
+
+
+/*Seccion de imagenes*/
+.imagenesseccion {
+    text-align: center;
+    max-width: 100%;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+}
+
+
+
+.divimagenseccion{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  footer */
+
+footer {
+    background-color: rgb(55, 58, 63);
+    color: #fff;
+    text-align: center;
+}

@@ -3,60 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portafolio - Mateo Gonzales y Kevin Alonso</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Portafolio de Desarrollo de Software</h1>
         <p>Mateo Gonzalez & Kevin Alonso</p>
-        <nav>
-            <ul>
-                <li><a href="#contacto">Contactanos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#habilidades">Nuestras habilidades</a></li>
-            </ul>
+        <nav class="nav_bar">
+            <div class="div_navbar">
+                <a href="#" class="nav_logo">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.p_Z6rI2dXcsM0vNdWDLTzQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                </a>
+                <ul class="nav_list">
+                    <a href="#contacto">Contactanos</a></li>
+                    <a href="#nosotros">Nosotros</a></li>
+                    <a href="#habilidades">Nuestras habilidades</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="nosotros">
+            <h2>Sobre nosotros</h2>
+            <div class="div-nosotros">
+                <article class="img-mateo">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHaELq7Q8IhYw/profile-displayphoto-scale_400_400/B4EZ2yz9FpIcAg-/0/1776821460867?e=1778716800&v=beta&t=eDjxVXRHqAsU8GeIxyvhdOZcaTxw8IQOwEfhXEFFzM0" alt="Foto de perfil de Mateo Gonzales">
+                    <h3>Mateo Gonzalez</h3>
+                    <p>Estudiante de Ingeniería de Software, apasionado por la lógica de programación y el diseño de bases de datos.</p>
+                </article>
+                <article class="img-kevin">
+                    <img src="https://media.licdn.com/dms/image/v2/C5603AQGwqzs1M5tVuQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1609972115595?e=1778716800&v=beta&t=BVFEDrQIzT4DP7-clYdqgOsMygh0e2U6po_Jb4cbf_w" alt="Foto de perfil de Kevin Alonso">
+                    <h3>Kevin Alonso</h3>
+                    <p>Estudiante de Ingeniería de Software, enfocado en el desarrollo Frontend y la creación de interfaces accesibles.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="formulariocontacto">
             <h2>Formulario de contacto</h2>
-            <form action="#" method="post" aria-label="Formulario de contacto">
-                <fieldset>
-                    <legend>Datos personales</legend>
-                    <p>
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="ejem. Kevin Gonzalez">
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" required placeholder="micorreo@email.com">
-                    </p>
-                    <p>
-                        <label for="numero">Teléfono:</label>
-                        <input type="tel" name="numero" id="numero" pattern="[0-9]{10}" title="Ingresa 10 dígitos sin espacios"
-                        placeholder="0962562482">
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Envianos tu mensaje</legend>
-                    <p>
-                        <label for="asunto">Asunto:</label>
-                        <select name="asunto" id="asunto" required>
-                            <option value="">-- Selecciona una opción --</option>
-                            <option value="Cotizacion">Idea para cotizar</option>
-                            <option value="trabajo">Oferta de trabajo</option>
-                            <option value="consulta">Consulta general</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </p>
-                    <p> 
-                        <label for="mensaje">Mensaje:</label> 
-                        <textarea id="mensaje" name="mensaje" 
-                        rows="5" cols="40" 
-                        required minlength="30" 
-                        placeholder="Cuéntanos en qué podemos ayudarte..."></textarea> 
-                    </p> 
-                </fieldset>
+            <form action="#" method="post" aria-label="Formulario de contacto" class="form-contact">
+                <div class="forms-fieldsets">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <p>
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="ejem. Kevin Gonzalez">
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required placeholder="micorreo@email.com">
+                        </p>
+                        <p>
+                            <label for="numero">Teléfono:</label>
+                            <input type="tel" name="numero" id="numero" pattern="[0-9]{10}" title="Ingresa 10 dígitos sin espacios"
+                            placeholder="0962562482">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Envianos tu mensaje</legend>
+                        <p>
+                            <label for="asunto">Asunto:</label>
+                            <select name="asunto" id="asunto" required>
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value="Cotizacion">Idea para cotizar</option>
+                                <option value="trabajo">Oferta de trabajo</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </p>
+                        <p> 
+                            <label for="mensaje">Mensaje:</label> 
+                            <textarea id="mensaje" name="mensaje" 
+                            rows="5" cols="40" 
+                            required minlength="30" 
+                            placeholder="Cuéntanos en qué podemos ayudarte..."></textarea> 
+                        </p> 
+                    </fieldset>
+                </div>
                 <p>
                     <input type="checkbox" name="derecho" id="derecho" required>
                     <label for="derecho">Acepto que mis datos sean almacenados y tratados.</label>
@@ -68,171 +92,168 @@
             </form>  
         </section>
         
-        <section id="nosotros">
-            <h2>Sobre nosotros</h2>
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Mateo Gonzales">
-                    <h3>Mateo Gonzalez</h3>
-                    <p>Estudiante de Ingeniería de Software, apasionado por la lógica de programación y el diseño de bases de datos.</p>
-                </article>
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Kevin Alonso">
-                    <h3>Kevin Alonso</h3>
-                    <p>Estudiante de Ingeniería de Software, enfocado en el desarrollo Frontend y la creación de interfaces accesibles.</p>
-                </article>
-        </section> 
-        
-        <section id="habilidadesmateo">
-            <h2>Habilidades Técnicas Mateo</h2>
-            <table>
-                <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Tecnología / Herramienta</th>
-                        <th scope="col">Dominio de Mateo</th>
-                        <th scope="col">Área de Aplicación</th>
-                        <th scope="col">Años de experiencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" rowspan="3">Lenguajes</th>
-                        <td>HTML 5 y CSS</td>
-                        <td>Avanzado</td>
-                        <td>Frontend</td>
-                        <td>2 años</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Avanzado</td>
-                        <td>Scripts Automatización</td>
-                        <td>5 años</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>Ultra avanzado</td>
-                        <td>Gestión de inventario</td>
-                        <td>5 años</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Framework</th>
-                        <td>Next.js</td>
-                        <td>Creador</td>
-                        <td>Todo Frontend</td>
-                        <td>Desde la cuna</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" rowspan="2">Base de datos</th>
-                        <td>PostgresSQL</td>
-                        <td>Medio</td>
-                        <td rowspan="2">Base de datos en proyectos</td>
-                        <td>2 años</td>
-                    </tr>
-                    <tr>
-                        <td>SQlite</td>
-                        <td>Avanzado</td>
-                        <td>3 años</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5">Ultima actualizacin 2026-04-21 - Mateo Gonzalez</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-        <section id="habilidadeskevin">
-            <h2>Habilidades Técnicas Kevin</h2>
-            <table>
-                <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Tecnología / Herramienta</th>
-                        <th scope="col">Dominio de Kevin</th>
-                        <th scope="col">Área de Aplicación</th>
-                        <th scope="col">Años de experiencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" rowspan="3">Lenguajes</th>
-                        <td>HTML5 & CSS3</td>
-                        <td>Avanzado</td>
-                        <td>Desarrollo y maquetación web</td>
-                        <td>2 Años</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>intermedio</td>
-                        <td>desarrolo frontend</td>
-                        <td>1 Año</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>intermedio</td>
-                        <td>desarrollo de Api's</td>
-                        <td>3 Años</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" rowspan="2">frameworks</th>
-                        <td>Django</td>
-                        <td>Avanzado</td>
-                        <td>Interactividad web y lógica</td>
-                        <td>1 Año</td>
-                    </tr>
-                    <tr>
-                        <td>React</td>
-                        <td>Basico</td>
-                        <td>Interactividad web y lógica</td>
-                        <td>1 Año</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" rowspan="1">Base de datos</th>
-                        <td>PostgresSQL</td>
-                        <td>Intermedio</td>
-                        <td>Administracion de DB</td>
-                        <td>2.5 Años</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" rowspan="3">Herramientas</th>
-                        <td>Git & GitHub</td>
-                        <td>Intermedio</td>
-                        <td>Control de versiones</td>
-                        <td>3 Años</td>
-                    </tr>
-                    <tr>
-                        <td>Docker and compose</td>
-                        <td>Intermedio</td>
-                        <td>Contenerizacion</td>
-                        <td>3 Años</td>
-                    </tr>
-                    <tr>
-                        <td>openclaw</td>
-                        <td>Intermedio</td>
-                        <td>automatizacion</td>
-                        <td>1 Años</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5">Ultima actualizacion 2026-04-21 - Kevin Alonso</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-        <section id="imagen">
-            <img src="team.png" alt="Equipo de desarrollo de software"
-            width="250"
-            height="200">
-            <img src="yardi.png" alt="Bot de respuesta automatica de confianza"
-            width="200"
-            height="200">
-            <img src="https://picsum.photos/536/354" alt="imagen decorativa"
-            width="250"
-            height="200">
-        </section>
+            <section class="habilidades">
+                <section id="habilidadesmateo">
+                    <h2>Habilidades Técnicas Mateo</h2>
+                    <table class="responsive-table">
+                        <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Tecnología / Herramienta</th>
+                                <th scope="col">Dominio de Mateo</th>
+                                <th scope="col">Área de Aplicación</th>
+                                <th scope="col">Años de experiencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="3">Lenguajes</th>
+                                <td>HTML 5 y CSS</td>
+                                <td>Avanzado</td>
+                                <td>Frontend</td>
+                                <td>2 años</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>Avanzado</td>
+                                <td>Scripts Automatización</td>
+                                <td>5 años</td>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td>Ultra avanzado</td>
+                                <td>Gestión de inventario</td>
+                                <td>5 años</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Framework</th>
+                                <td>Next.js</td>
+                                <td>Creador</td>
+                                <td>Todo Frontend</td>
+                                <td>Desde la cuna</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">Base de datos</th>
+                                <td>PostgresSQL</td>
+                                <td>Medio</td>
+                                <td rowspan="2">Base de datos en proyectos</td>
+                                <td>2 años</td>
+                            </tr>
+                            <tr>
+                                <td>SQlite</td>
+                                <td>Avanzado</td>
+                                <td>3 años</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Ultima actualizacin 2026-04-21 - Mateo Gonzalez</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <section id="habilidadeskevin">
+                    <h2>Habilidades Técnicas Kevin</h2>
+                    <table class="responsive-table">
+                        <caption>Resumen de competencias técnicas y nivel de dominio del equipo</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Tecnología / Herramienta</th>
+                                <th scope="col">Dominio de Kevin</th>
+                                <th scope="col">Área de Aplicación</th>
+                                <th scope="col">Años de experiencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="3">Lenguajes</th>
+                                <td>HTML5 & CSS3</td>
+                                <td>Avanzado</td>
+                                <td>Desarrollo y maquetación web</td>
+                                <td>2 Años</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>intermedio</td>
+                                <td>desarrolo frontend</td>
+                                <td>1 Año</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>intermedio</td>
+                                <td>desarrollo de Api's</td>
+                                <td>3 Años</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">frameworks</th>
+                                <td>Django</td>
+                                <td>Avanzado</td>
+                                <td>Interactividad web y lógica</td>
+                                <td>1 Año</td>
+                            </tr>
+                            <tr>
+                                <td>React</td>
+                                <td>Basico</td>
+                                <td>Interactividad web y lógica</td>
+                                <td>1 Año</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="1">Base de datos</th>
+                                <td>PostgresSQL</td>
+                                <td>Intermedio</td>
+                                <td>Administracion de DB</td>
+                                <td>2.5 Años</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="3">Herramientas</th>
+                                <td>Git & GitHub</td>
+                                <td>Intermedio</td>
+                                <td>Control de versiones</td>
+                                <td>3 Años</td>
+                            </tr>
+                            <tr>
+                                <td>Docker and compose</td>
+                                <td>Intermedio</td>
+                                <td>Contenerizacion</td>
+                                <td>3 Años</td>
+                            </tr>
+                            <tr>
+                                <td>openclaw</td>
+                                <td>Intermedio</td>
+                                <td>automatizacion</td>
+                                <td>1 Años</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Ultima actualizacion 2026-04-21 - Kevin Alonso</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </section>
+
+
+
+            <section class="imagenesseccion">
+                <h2>Imagenes del equipo</h2>
+                <div class="divimagenseccion">
+                    <img src="team.png" alt="Equipo de desarrollo de software"
+                    width="250"
+                    height="200">
+                    <img src="yardi.png" alt="Bot de respuesta automatica de confianza"
+                    width="200"
+                    height="200">
+                    <img src="https://picsum.photos/536/354" alt="imagen decorativa"
+                    width="250"
+                    height="200">
+                </div>
+            </section>
+
+
+            
     </main>
     <footer>
         <p>&copy; 2026 Mateo Gonzalez & Kevin Alonso. Todos los derechos reservados.</p>
