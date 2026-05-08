@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts: Inter --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
     <link rel="stylesheet" href="style.css">
     <title>Portafolio - Mateo Gonzales y Kevin Alonso</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Portafolio de Desarrollo de Software</h1>
-        <p>Mateo Gonzalez & Kevin Alonso</p>
-        <nav class="nav_bar">
+    <header class="header hero">
+        <h1 class="hero__title">Portafolio de Desarrollo de Software</h1>
+        <p class="hero__subtitle">Mateo Gonzalez & Kevin Alonso</p>
+        <nav class="nav_bar navbar" aria-label="Navegación principal">
             <div class="div_navbar">
                 <a href="#" class="nav_logo">
-                    <img src="https://tse2.mm.bing.net/th/id/OIP.p_Z6rI2dXcsM0vNdWDLTzQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.p_Z6rI2dXcsM0vNdWDLTzQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo del portafolio">
                 </a>
                 <ul class="nav_list">
-                    <a href="#contacto">Contactanos</a></li>
-                    <a href="#nosotros">Nosotros</a></li>
-                    <a href="#habilidades">Nuestras habilidades</a></li>
+                    <li><a href="#contacto">Contactanos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#habilidades">Nuestras habilidades</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="nosotros">
+        <section id="nosotros" class="nosotros">
             <h2>Sobre nosotros</h2>
             <div class="div-nosotros">
                 <article class="img-mateo">
@@ -42,7 +47,7 @@
 
         <section id="contacto" class="formulariocontacto">
             <h2>Formulario de contacto</h2>
-            <form action="#" method="post" aria-label="Formulario de contacto" class="form-contact">
+            <form action="#" method="post" aria-label="Formulario de contacto" class="forms-contact">
                 <div class="forms-fieldsets">
                     <fieldset>
                         <legend>Datos personales</legend>
@@ -88,11 +93,11 @@
                 <p>
                     <button type="submit">Enviar mensaje</button>
                     <button type="reset">Limpiar</button>
-                <p>
+                </p>
             </form>  
         </section>
         
-            <section class="habilidades">
+            <section class="habilidades" id="habilidades">
                 <section id="habilidadesmateo">
                     <h2>Habilidades Técnicas Mateo</h2>
                     <table class="responsive-table">
@@ -109,39 +114,39 @@
                         <tbody>
                             <tr>
                                 <th scope="row" rowspan="3">Lenguajes</th>
-                                <td>HTML 5 y CSS</td>
+                                <td><i class="fa-brands fa-html5"></i> HTML 5 y <i class="fa-brands fa-css3-alt"></i> CSS</td>
                                 <td>Avanzado</td>
                                 <td>Frontend</td>
                                 <td>2 años</td>
                             </tr>
                             <tr>
-                                <td>Python</td>
+                                <td><i class="fa-brands fa-python"></i> Python</td>
                                 <td>Avanzado</td>
                                 <td>Scripts Automatización</td>
                                 <td>5 años</td>
                             </tr>
                             <tr>
-                                <td>C++</td>
+                                <td><i class="fa-brands fa-c-plus-plus"></i> C++</td>
                                 <td>Ultra avanzado</td>
                                 <td>Gestión de inventario</td>
                                 <td>5 años</td>
                             </tr>
                             <tr>
                                 <th scope="row">Framework</th>
-                                <td>Next.js</td>
+                                <td><i class="fa-brands fa-react"></i> React</td>
                                 <td>Creador</td>
                                 <td>Todo Frontend</td>
                                 <td>Desde la cuna</td>
                             </tr>
                             <tr>
                                 <th scope="row" rowspan="2">Base de datos</th>
-                                <td>PostgresSQL</td>
+                                <td><i class="fa-solid fa-database"></i> PostgresSQL</td>
                                 <td>Medio</td>
                                 <td rowspan="2">Base de datos en proyectos</td>
                                 <td>2 años</td>
                             </tr>
                             <tr>
-                                <td>SQlite</td>
+                                <td><i class="fa-solid fa-database"></i> SQlite</td>
                                 <td>Avanzado</td>
                                 <td>3 años</td>
                             </tr>
@@ -169,58 +174,58 @@
                         <tbody>
                             <tr>
                                 <th scope="row" rowspan="3">Lenguajes</th>
-                                <td>HTML5 & CSS3</td>
+                                <td><i class="fa-brands fa-html5"></i> HTML5 & <i class="fa-brands fa-css3-alt"></i> CSS3</td>
                                 <td>Avanzado</td>
                                 <td>Desarrollo y maquetación web</td>
                                 <td>2 Años</td>
                             </tr>
                             <tr>
-                                <td>JavaScript</td>
+                                <td><i class="fa-brands fa-js"></i> JavaScript</td>
                                 <td>intermedio</td>
                                 <td>desarrolo frontend</td>
                                 <td>1 Año</td>
                             </tr>
                             <tr>
-                                <td>Python</td>
+                                <td><i class="fa-brands fa-python"></i> Python</td>
                                 <td>intermedio</td>
                                 <td>desarrollo de Api's</td>
                                 <td>3 Años</td>
                             </tr>
                             <tr>
                                 <th scope="row" rowspan="2">frameworks</th>
-                                <td>Django</td>
+                                <td><i class="fa-solid fa-code"></i> Django</td>
                                 <td>Avanzado</td>
                                 <td>Interactividad web y lógica</td>
                                 <td>1 Año</td>
                             </tr>
                             <tr>
-                                <td>React</td>
+                                <td><i class="fa-brands fa-react"></i> React</td>
                                 <td>Basico</td>
                                 <td>Interactividad web y lógica</td>
                                 <td>1 Año</td>
                             </tr>
                             <tr>
                                 <th scope="row" rowspan="1">Base de datos</th>
-                                <td>PostgresSQL</td>
+                                <td><i class="fa-solid fa-database"></i> PostgresSQL</td>
                                 <td>Intermedio</td>
                                 <td>Administracion de DB</td>
                                 <td>2.5 Años</td>
                             </tr>
                             <tr>
                                 <th scope="row" rowspan="3">Herramientas</th>
-                                <td>Git & GitHub</td>
+                                <td><i class="fa-brands fa-git-alt"></i> Git & <i class="fa-brands fa-github"></i> GitHub</td>
                                 <td>Intermedio</td>
                                 <td>Control de versiones</td>
                                 <td>3 Años</td>
                             </tr>
                             <tr>
-                                <td>Docker and compose</td>
+                                <td><i class="fa-brands fa-docker"></i> Docker and <i class="fa-brands fa-compose"></i> compose</td>
                                 <td>Intermedio</td>
                                 <td>Contenerizacion</td>
                                 <td>3 Años</td>
                             </tr>
                             <tr>
-                                <td>openclaw</td>
+                                <td><i class="fa-solid fa-robot"></i> openclaw</td>
                                 <td>Intermedio</td>
                                 <td>automatizacion</td>
                                 <td>1 Años</td>
@@ -235,7 +240,66 @@
                 </section>
             </section>
 
-
+            <section id="proyectos" class="seccion">
+                <h2>Proyectos</h2>
+                <div class="galeria">
+          
+                  <article class="tarjeta">
+                    <div class="tarjeta-imagen" aria-hidden="true">
+                        <img src="https://picsum.photos/536/354" alt="Sistema de gestion de inventario" width="250" height="200">
+                    </div>
+                    <h3>Sistema de gestion de inventario</h3>
+                    <p>Sistema de gestion de inventario en Python con Django.</p>
+                    <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                  </article>
+          
+                  <article class="tarjeta">
+                    <div class="tarjeta-imagen" aria-hidden="true">
+                        <img src="https://picsum.photos/536/354" alt="Sistema de gestion academica" width="250" height="200">
+                    </div>
+                    <h3>Sistema de gestion academica</h3>
+                    <p>Sistema de gestion academica en Angular con Nest.js.</p>
+                    <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                  </article>
+          
+                  <article class="tarjeta">
+                    <div class="tarjeta-imagen" aria-hidden="true">
+                        <img src="https://picsum.photos/536/354" alt="Sistema de gestion de ventas" width="250" height="200">
+                    </div>
+                    <h3>Sistema de gestion de ventas</h3>
+                    <p>Sistema de gestion de ventas en React con Node.js.</p>
+                    <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                  </article>
+          
+                  <article class="tarjeta">
+                    <div class="tarjeta-imagen" aria-hidden="true">
+                        <img src="https://picsum.photos/536/354" alt="Reproductor de musica" width="250" height="200">
+                    </div>
+                    <h3>Reproductor de musica</h3>
+                    <p>Reproductor de musica en React con Node.js.</p>
+                    <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                  </article>
+          
+                  <article class="tarjeta">
+                    <div class="tarjeta-imagen" aria-hidden="true">
+                        <img src="https://picsum.photos/536/354" alt="Sistema web de apuestas" width="250" height="200">
+                    </div>
+                    <h3>Sistema web de apuestas</h3>
+                    <p>Sistema web de apuestas con predicciones con IA en React con Node.js.</p>
+                    <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                  </article>
+          
+                  <article class="tarjeta">
+                    <div class="tarjeta-imagen" aria-hidden="true">
+                        <img src="https://picsum.photos/536/354" alt="Juego de cartas" width="250" height="200">
+                    </div>
+                    <h3>Juego de cartas</h3>
+                    <p>Juego de cartas en JavaScript vanilla con HTML y CSS.</p>
+                    <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                  </article>
+          
+                </div>
+              </section>
 
             <section class="imagenesseccion">
                 <h2>Imagenes del equipo</h2>
@@ -255,7 +319,29 @@
 
             
     </main>
-    <footer>
+    <footer class="footer">
+        <div id="redes-mateogonzalez" class="redes"> 
+            <a href="https://github.com/ElRascuacho" target="_blank" rel="noopener" aria-label="GitHub"> 
+              <i class="fa-brands fa-github"></i> 
+            </a> 
+            <a href="https://linkedin.com/in/mateogonzalezjs" target="_blank" rel="noopener" aria-label="LinkedIn"> 
+              <i class="fa-brands fa-linkedin"></i> 
+            </a> 
+            <a href="mailto:e1316690468@live.uleam.edu.ec" aria-label="Email"> 
+              <i class="fa-solid fa-envelope"></i> 
+            </a> 
+          </div> 
+          <div id="redes-kevinalonso" class="redes"> 
+            <a href="https://github.com/Tokioh" target="_blank" rel="noopener" aria-label="GitHub"> 
+              <i class="fa-brands fa-github"></i> 
+            </a> 
+            <a href="https://www.linkedin.com/in/kevinalonsodev" target="_blank" rel="noopener" aria-label="LinkedIn"> 
+              <i class="fa-brands fa-linkedin"></i> 
+            </a> 
+            <a href="mailto:e1316690468@live.uleam.edu.ec" aria-label="Email"> 
+              <i class="fa-solid fa-envelope"></i> 
+            </a> 
+          </div> 
         <p>&copy; 2026 Mateo Gonzalez & Kevin Alonso. Todos los derechos reservados.</p>
     </footer>
 </body>
