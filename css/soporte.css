@@ -1,0 +1,99 @@
+/* ============================================================
+   TICKET CENTER  —  Módulo Isaac Mateo
+   ============================================================ */
+.ticket-page {
+  padding-top: 68px;
+}
+#tickets { position: relative; }
+.ticket-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.ticket-form {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+.ticket-form h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.ticket-form .form-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+.ticket-icon {
+  color: var(--orange);
+  margin-right: 8px;
+}
+.ticket-list {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+.ticket-list h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.ticket-list .list-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.ticket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.ticket-item:last-child { border-bottom: none; }
+.ticket-item-left h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.ticket-item-left p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.badge-progress {
+  background: rgba(240, 147, 43, 0.15);
+  color: var(--orange);
+}
+.badge-done {
+  background: rgba(46, 213, 115, 0.15);
+  color: #2ed573;
+}
+.badge-pending {
+  background: rgba(255, 77, 77, 0.15);
+  color: var(--red);
+}
+
+@media (max-width: 991px) {
+  .ticket-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 767px) {
+  .ticket-item { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+
+@media (max-width: 393px) {
+  .ticket-form, .ticket-list { padding: 20px; }
+}
